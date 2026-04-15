@@ -1,0 +1,7 @@
+#How to run 
+ 
+docker run  --volume=/Users/hansikaw/Documents/Rossate:/rosset -it -d rosset:1.0.0
+  
+docker run  --volume=/Users/hansikaw/Documents/TEE/verification/formal/tdx/rosette:/rosset -it rosset:1.0.0  
+
+racket tables.rkt

@@ -5,12 +5,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-;; Relocation model: DERIVED from temporal ordering
-;; A single symbolic relocation timestamp
 (define-symbolic reloc-time integer?)
 
 (define (relocation-between? t-before t-after)
-  ;; True iff relocation falls strictly between the two timestamps
   (and (< t-before reloc-time)
        (< reloc-time t-after)))
 
